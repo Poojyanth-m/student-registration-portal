@@ -1,0 +1,51 @@
+<div class="page-container">
+    <header class="header">
+      <h1>Student Registration</h1>
+    </header>
+  
+    <main class="main-content">
+      <div class="form-card animate-pop">
+        <h2><i class="fas fa-user-graduate"></i> Register a New Student</h2>
+  
+        <form (ngSubmit)="onSubmit()" #studentForm="ngForm">
+          <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" [(ngModel)]="student.name" required />
+          </div>
+  
+          <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" [(ngModel)]="student.email" required />
+          </div>
+  
+          <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" [(ngModel)]="student.age" required />
+          </div>
+  
+          <button type="submit" [disabled]="!studentForm.form.valid" class="submit-button">
+            Submit
+          </button>
+        </form>
+      </div>
+    </main>
+  
+    <footer class="footer">
+      <div class="footer-content">
+        <h3>Student Registration Portal</h3>
+        <p class="footer-description">
+          Easily manage new student entries with our smart registration portal.
+        </p>
+        <p class="footer-credit">
+          Designed and Developed by <span class="highlight">Poojanth M</span>
+        </p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  

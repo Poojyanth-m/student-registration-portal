@@ -1,0 +1,15 @@
+.navbar {
+    background-color: #007bff;
+    padding: 10px 0;
+    color: white;
+  }
+  
+  .navbar-container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
